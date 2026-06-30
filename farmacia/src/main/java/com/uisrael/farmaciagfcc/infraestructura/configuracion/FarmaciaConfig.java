@@ -135,10 +135,7 @@ public class FarmaciaConfig {
 		return new LaboratoriosUseCaseImpl(repoUseCase);
 	}
 	
-	@Bean
-	ILaboratoriosJpaMapper laboratoriosJpaMapper() {
-		return Mappers.getMapper(ILaboratoriosJpaMapper.class);
-	}
+
 
 	@Bean
 	IPedidosRepositorio pedidosRepositorio(IPedidosJpaRepositorio jpaRepositorio, IPedidosJpaMapper mapper) {
