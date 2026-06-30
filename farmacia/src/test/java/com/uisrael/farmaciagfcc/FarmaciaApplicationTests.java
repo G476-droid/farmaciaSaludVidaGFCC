@@ -11,25 +11,25 @@ import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.FarmaciasEntity
 import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.InventarioEntity;
 import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.PedidosEntity;
 import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.ProductosEntity;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IClientesRepositorio;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IFarmaciasRepositorio;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IInventariosRepositorio;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IPedidosRepositorio;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IProductosRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IClientesJpaRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IFarmaciasJpaRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IInventariosJpaRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IPedidosJpaRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IProductosJpaRepositorio;
 
 @SpringBootTest
 class FarmaciaApplicationTests {
 	
 	@Autowired
-	IClientesRepositorio reposClientes;
+	IClientesJpaRepositorio reposClientes;
 	@Autowired
-	IFarmaciasRepositorio reposFarmacias;
+	IFarmaciasJpaRepositorio reposFarmacias;
 	@Autowired
-	IInventariosRepositorio reposInventarios;
+	IInventariosJpaRepositorio reposInventarios;
 	@Autowired
-	IPedidosRepositorio reposPedidos; 
+	IPedidosJpaRepositorio reposPedidos; 
 	@Autowired
-	IProductosRepositorio reposProductos; 
+	IProductosJpaRepositorio reposProductos; 
 
 	@Test
 	void contextLoads() {

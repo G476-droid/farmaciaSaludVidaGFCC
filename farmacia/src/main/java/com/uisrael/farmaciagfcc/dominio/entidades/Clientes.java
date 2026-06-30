@@ -10,6 +10,7 @@ public class Clientes {
 	private String telefono;
 	private String direccion;
 	private boolean estado;
+	
 	public Clientes(int idCliente, String nombre, String apellido, String cedula, String correo, String telefono,
 			String direccion, boolean estado) {
 		this.idCliente = idCliente;
@@ -20,9 +21,11 @@ public class Clientes {
 		this.telefono = telefono;
 		this.direccion = direccion;
 		this.estado = estado;
+		
 	}
 	public Clientes() {
 	}
+	
 	public int getIdCliente() {
 		return idCliente;
 	}

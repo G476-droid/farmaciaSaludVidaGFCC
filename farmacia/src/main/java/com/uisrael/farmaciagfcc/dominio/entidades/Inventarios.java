@@ -5,19 +5,24 @@ import java.util.Date;
 public class Inventarios {
 	
 	private int idInventario;
+	//private int idFarmacia;
+	//private int idProducto;
 	private String stock;
 	private String stockMinimo;
 	private Date fechaActualizacion;
 	private boolean estado;
+	
 	public Inventarios(int idInventario, String stock, String stockMinimo, Date fechaActualizacion, boolean estado) {
 		this.idInventario = idInventario;
 		this.stock = stock;
 		this.stockMinimo = stockMinimo;
 		this.fechaActualizacion = fechaActualizacion;
 		this.estado = estado;
+		
 	}
 	public Inventarios() {
 	}
+	
 	public int getIdInventario() {
 		return idInventario;
 	}
