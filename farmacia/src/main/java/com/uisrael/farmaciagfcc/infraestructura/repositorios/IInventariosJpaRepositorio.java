@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.InventarioEntity;
 
 
-public interface IInventariosRepositorio extends JpaRepository<InventarioEntity, Integer> {
+public interface IInventariosJpaRepositorio extends JpaRepository<InventarioEntity, Integer> {
 
 }

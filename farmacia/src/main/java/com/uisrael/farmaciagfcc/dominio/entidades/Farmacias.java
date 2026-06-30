@@ -8,6 +8,7 @@ public class Farmacias {
 	private String zona;
 	private String telefono;
 	private boolean estado;
+	
 	public Farmacias(int idFarmacia, String nombre, String direccion, String zona, String telefono, boolean estado) {
 		this.idFarmacia = idFarmacia;
 		this.nombre = nombre;
@@ -15,9 +16,11 @@ public class Farmacias {
 		this.zona = zona;
 		this.telefono = telefono;
 		this.estado = estado;
+		
 	}
 	public Farmacias() {
 	}
+	
 	public int getIdFarmacia() {
 		return idFarmacia;
 	}

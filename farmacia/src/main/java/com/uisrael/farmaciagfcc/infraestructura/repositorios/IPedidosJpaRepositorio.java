@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.PedidosEntity;
 
 
-public interface IPedidosRepositorio extends JpaRepository<PedidosEntity, Integer>{
+public interface IPedidosJpaRepositorio extends JpaRepository<PedidosEntity, Integer>{
 
 }

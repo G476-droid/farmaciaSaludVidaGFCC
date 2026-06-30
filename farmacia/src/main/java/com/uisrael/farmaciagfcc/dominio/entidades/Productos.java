@@ -1,5 +1,6 @@
 package com.uisrael.farmaciagfcc.dominio.entidades;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Productos {
@@ -9,10 +10,14 @@ public class Productos {
 	private String descripcion;
 	private String tipoProducto;
 	private String precio;
-	private Date fechaVencimiento;
-	private boolean estadoRegistro;
+	private LocalDate fechaVencimiento;
+	//private int idCategoria;
+	//private int idLaboratorio;
+	private Boolean estadoRegistro;
+	
+	
 	public Productos(int idProducto, String nombre, String descripcion, String tipoProducto, String precio,
-			Date fechaVencimiento, boolean estadoRegistro) {
+			LocalDate fechaVencimiento, Boolean estadoRegistro) {
 		this.idProducto = idProducto;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
@@ -53,16 +58,16 @@ public class Productos {
 	public void setPrecio(String precio) {
 		this.precio = precio;
 	}
-	public Date getFechaVencimiento() {
+	public LocalDate getFechaVencimiento() {
 		return fechaVencimiento;
 	}
-	public void setFechaVencimiento(Date fechaVencimiento) {
+	public void setFechaVencimiento(LocalDate fechaVencimiento) {
 		this.fechaVencimiento = fechaVencimiento;
 	}
-	public boolean isEstadoRegistro() {
+	public Boolean isEstadoRegistro() {
 		return estadoRegistro;
 	}
-	public void setEstadoRegistro(boolean estadoRegistro) {
+	public void setEstadoRegistro(Boolean estadoRegistro) {
 		this.estadoRegistro = estadoRegistro;
 	}
 	
