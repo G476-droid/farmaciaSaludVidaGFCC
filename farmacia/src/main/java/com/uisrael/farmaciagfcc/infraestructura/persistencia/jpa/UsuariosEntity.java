@@ -6,6 +6,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 @Data
@@ -21,5 +23,10 @@ public class UsuariosEntity {
 	private String password;
 	//private int idRol;
 	private Boolean estado;
+	
+	// rol --- usuarios
 
+	@ManyToOne
+	@JoinColumn(name = "id_rol")
+	private RolesEntity fkRolEntity;
 }
