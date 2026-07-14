@@ -1,6 +1,5 @@
 package com.uisrael.farmaciagfcc.infraestructura.configuracion;
 
-import org.mapstruct.factory.Mappers;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
