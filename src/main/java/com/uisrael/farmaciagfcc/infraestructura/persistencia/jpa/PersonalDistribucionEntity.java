@@ -26,7 +26,7 @@ public class PersonalDistribucionEntity {
 	private String telefono;
 	private Boolean estado;
 	
-	
+	//hola 
 // personal distribucion -- rutas
 	
 	@OneToMany(mappedBy = "fkPersonalEntity")
