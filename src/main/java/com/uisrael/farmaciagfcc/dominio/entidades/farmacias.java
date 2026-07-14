@@ -1,6 +1,6 @@
 package com.uisrael.farmaciagfcc.dominio.entidades;
 
-public class farmacias {
+public class Farmacias {
 	
 	private int idFarmacia;
 	private String nombre;
@@ -8,16 +8,19 @@ public class farmacias {
 	private String zona;
 	private String telefono;
 	private boolean estado;
-	public farmacias(int idFarmacia, String nombre, String direccion, String zona, String telefono, boolean estado) {
+	
+	public Farmacias(int idFarmacia, String nombre, String direccion, String zona, String telefono, boolean estado) {
 		this.idFarmacia = idFarmacia;
 		this.nombre = nombre;
 		this.direccion = direccion;
 		this.zona = zona;
 		this.telefono = telefono;
 		this.estado = estado;
+		
 	}
-	public farmacias() {
+	public Farmacias() {
 	}
+	
 	public int getIdFarmacia() {
 		return idFarmacia;
 	}

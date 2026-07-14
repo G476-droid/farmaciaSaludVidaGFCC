@@ -6,35 +6,35 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.clientesEntity;
-import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.farmaciasEntity;
-import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.inventarioEntity;
-import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.pedidosEntity;
-import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.productosEntity;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IClientesRepositorio;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IFarmaciasRepositorio;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IInventariosRepositorio;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IPedidosRepositorio;
-import com.uisrael.farmaciagfcc.infraestructura.repositorios.IProductosRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.ClientesEntity;
+import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.FarmaciasEntity;
+import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.InventarioEntity;
+import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.PedidosEntity;
+import com.uisrael.farmaciagfcc.infraestructura.persistencia.jpa.ProductosEntity;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IClientesJpaRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IFarmaciasJpaRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IInventariosJpaRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IPedidosJpaRepositorio;
+import com.uisrael.farmaciagfcc.infraestructura.repositorios.IProductosJpaRepositorio;
 
 @SpringBootTest
 class FarmaciaApplicationTests {
 	
 	@Autowired
-	IClientesRepositorio reposClientes;
+	IClientesJpaRepositorio reposClientes;
 	@Autowired
-	IFarmaciasRepositorio reposFarmacias;
+	IFarmaciasJpaRepositorio reposFarmacias;
 	@Autowired
-	IInventariosRepositorio reposInventarios;
+	IInventariosJpaRepositorio reposInventarios;
 	@Autowired
-	IPedidosRepositorio reposPedidos; 
+	IPedidosJpaRepositorio reposPedidos; 
 	@Autowired
-	IProductosRepositorio reposProductos; 
+	IProductosJpaRepositorio reposProductos; 
 
 	@Test
 	void contextLoads() {
 					
-		clientesEntity nuevo = new clientesEntity();
+		ClientesEntity nuevo = new ClientesEntity();
 		nuevo.setNombre("Fernanda");
 		nuevo.setApellido("Cumbicos");
 		nuevo.setCedula("123456543");
@@ -45,7 +45,7 @@ class FarmaciaApplicationTests {
 		reposClientes.save(nuevo);
 		
 		
-		farmaciasEntity nuevaFarmacia = new farmaciasEntity();
+		FarmaciasEntity nuevaFarmacia = new FarmaciasEntity();
 		nuevaFarmacia.setNombre("Fybeca");
 		nuevaFarmacia.setDireccion("Nueva Loja");
 		nuevaFarmacia.setZona("Loja");
@@ -54,20 +54,20 @@ class FarmaciaApplicationTests {
 		reposFarmacias.save(nuevaFarmacia);	
 		
 		
-		inventarioEntity nuevaInventario = new inventarioEntity();
+		InventarioEntity nuevaInventario = new InventarioEntity();
 		nuevaInventario.setStock("34");
 		nuevaInventario.setStockMinimo("5");
 		nuevaInventario.setEstado(true);
 		reposInventarios.save(nuevaInventario);	
 		
 		
-		pedidosEntity nuevaPedidos = new pedidosEntity();
+		PedidosEntity nuevaPedidos = new PedidosEntity();
 		nuevaPedidos.setEstadoRegistro(true);
 		nuevaPedidos.setTotal("200");
 		reposPedidos.save(nuevaPedidos);
 
 		
-		productosEntity nuevaProductos = new productosEntity();
+		ProductosEntity nuevaProductos = new ProductosEntity();
 		nuevaProductos.setNombre("Finalin");
 		nuevaProductos.setDescripcion("200 Finalin");
 		nuevaProductos.setTipoProducto("Pastilla");

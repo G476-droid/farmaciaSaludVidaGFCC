@@ -1,6 +1,6 @@
 package com.uisrael.farmaciagfcc.dominio.entidades;
 
-public class clientes {
+public class Clientes {
 	
 	private int idCliente;
 	private String nombre;
@@ -10,7 +10,8 @@ public class clientes {
 	private String telefono;
 	private String direccion;
 	private boolean estado;
-	public clientes(int idCliente, String nombre, String apellido, String cedula, String correo, String telefono,
+	
+	public Clientes(int idCliente, String nombre, String apellido, String cedula, String correo, String telefono,
 			String direccion, boolean estado) {
 		this.idCliente = idCliente;
 		this.nombre = nombre;
@@ -20,9 +21,11 @@ public class clientes {
 		this.telefono = telefono;
 		this.direccion = direccion;
 		this.estado = estado;
+		
 	}
-	public clientes() {
+	public Clientes() {
 	}
+	
 	public int getIdCliente() {
 		return idCliente;
 	}
