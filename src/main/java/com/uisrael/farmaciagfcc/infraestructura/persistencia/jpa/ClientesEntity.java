@@ -30,6 +30,8 @@ public class ClientesEntity {
 	private String direccion;
 	private boolean estado;
 	
+	
+	// Hola
 	// cliente - pedidos
 	@OneToMany(mappedBy = "fkClienteEntity")
 	private List<PedidosEntity> pedidos = new ArrayList<>();
