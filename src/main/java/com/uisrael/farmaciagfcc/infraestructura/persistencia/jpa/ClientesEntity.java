@@ -21,7 +21,7 @@ public class ClientesEntity {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name = "id_cliente")
-	private int idCliente;
+	private Integer idCliente;
 	private String nombre;
 	private String apellido;
 	private String cedula;

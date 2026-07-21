@@ -44,4 +44,7 @@ public class PedidosEntity {
 	@OneToMany(mappedBy = "fkPedidoEntity")
 	private List<RutasEntity> rutas = new ArrayList<>();
 	
+	// pedido -- detalle pedido
+	@OneToMany(mappedBy = "fkPedidoEntity")
+	private List<DetallePedidoEntity> detallesPedido = new ArrayList<>();
 }

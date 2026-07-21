@@ -18,7 +18,6 @@ public class ClientesRequestDto {
 	private String telefono;
 	@NotBlank
 	private String direccion;
-	@NotBlank
 	private boolean estado;
 
 }
